@@ -130,6 +130,10 @@
     ul {
         @apply list-disc list-inside;
     }
+
+    ul.list-style-none {
+        @apply list-none;
+    }
 }
 
 @layer components {
