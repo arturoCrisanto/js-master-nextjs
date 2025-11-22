@@ -1,4 +1,21 @@
+import EventCard from "@/components/EventCard"
 import ExploreBtn from "@/components/ExploreBtn"
+
+const events = [
+  {
+   image: '/images/event1.png',
+   title: 'Tech Conference 2023',
+  },
+  {
+   image: '/images/event2.png',
+   title: 'Developer Meetup 2023',
+  },
+  {
+   image: '/images/event3.png',
+   title: 'Design Workshop 2023',
+  },
+]
+
 
 function page() {
   return (
@@ -11,8 +28,9 @@ function page() {
 
       <h3>Featured Events</h3>
       <ul className="events list-style-none">
-        {[1,2,3,4,5,6,7,8].map((event)=>(
-          <li key={event}> Event {event}
+        {events.map((event)=>(
+          <li key={event.title}>
+            <EventCard {...event} />
           </li>
         ))}
         
