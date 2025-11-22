@@ -1,20 +1,7 @@
 import EventCard from "@/components/EventCard"
 import ExploreBtn from "@/components/ExploreBtn"
+import { events } from "@/lib/constants"
 
-const events = [
-  {
-   image: '/images/event1.png',
-   title: 'Tech Conference 2023',
-  },
-  {
-   image: '/images/event2.png',
-   title: 'Developer Meetup 2023',
-  },
-  {
-   image: '/images/event3.png',
-   title: 'Design Workshop 2023',
-  },
-]
 
 
 function page() {
