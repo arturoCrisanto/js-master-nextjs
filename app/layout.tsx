@@ -14,11 +14,6 @@ const martianMono = Martian_Mono({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
-  title: "DevEvent",
-  description: "The Hub for every Developer Event you musnt miss.",
-};
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -35,7 +30,6 @@ export default function RootLayout({
             raysOrigin="top-center-offset"
             raysColor="5dfeca"
             raysSpeed={0.5}
-            lightSpread={0.9}
             rayLength={1.4}
             followMouse={true}
             mouseInfluence={0.1}
